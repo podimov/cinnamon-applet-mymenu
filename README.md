@@ -1,4 +1,4 @@
-# cinnamon-applet-mymeny
+# cinnamon-applet-mymenu
 An applet for various actions
 
 # How to use applet
