@@ -51,16 +51,15 @@ MyApplet.prototype = {
         this.menu.removeAll();
 
         try {
-            let [res, out, err, status] = GLib.spawn_command_line_sync('grep "^Action " .local/share/cinnamon/applets/' + UUID + '/config');
-            if(out.length!=0) {
+            let [res, out, err, status] = GLib.spawn_command_line_sync('grep "^Action|" .local/share/cinnamon/applets/' + UUID + '/config');
+            if(out.length !== 0) {
                 let actions = out.toString().split("\n");
                 for(let i=0; i<actions.length; i++) {
                     let action = actions[i];
-                    if(action != "") {
-                        let actionAndCommand = action.replace("Action ", "");
-                        let actionAndCommandArray = actionAndCommand.split('|');
-                        let actionName = actionAndCommandArray[0];
-                        let command = actionAndCommandArray[1];
+                    if(action !== "") {
+                        let actionAndCommandArray = action.split('|');
+                        let actionName = actionAndCommandArray[1];
+                        let command = actionAndCommandArray[2];
                         let item = new PopupMenu.PopupMenuItem(actionName);
                         item.connect('activate', Lang.bind(this, function() { this.doAction(actionName, command); }));
                         this.menu.addMenuItem(item);

@@ -20,7 +20,7 @@ An applet for various actions
 
 5. Click on applet and select "Edit config". In text file you can write any commands in format:
     ```
-    Action Launch Midnight Commander|mc
+    Action|Launch Midnight Commander|mc
     ```
     where "Launch Midnight Commander" - command name, "mc" - command
     
