@@ -1,0 +1,8 @@
+{
+    "uuid": "mymenu@podimov",
+    "dangerous": true, 
+    "description": "An applet for various actions",
+    "name": "My menu",
+    "last-edited": 1496921196,
+    "icon": "view-refresh"
+}
