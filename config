@@ -1,6 +1,2 @@
 Action hosts|sudo nano /etc/hosts
 Action Version PHP|sh .local/share/cinnamon/applets/mymenu@podimov/version_php.sh
-Action SSH connect cdn|ssh cdn
-Action SSH connect frontdev1|ssh frontdev1
-Action SSH connect front1|ssh front1
-Action SSH connect balancer3|ssh balancer3
