@@ -1,6 +1,8 @@
 # cinnamon-applet-mymenu
 An applet for various actions
 
+<img src="http://podimov.com/github/menu.png" width="165" />
+
 # How to use applet
 
 1. Go to applets folder
@@ -28,6 +30,8 @@ An applet for various actions
     ```
     Action|separator
     ```
+
+<img src="http://podimov.com/github/config.jpg" width="165" />
     
 # License
 
