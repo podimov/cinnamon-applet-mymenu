@@ -31,7 +31,7 @@ An applet for various actions
     Action|separator
     ```
 
-<img src="http://podimov.com/github/config.jpg" width="165" />
+<img src="http://podimov.com/github/config.jpg" width="677" />
     
 # License
 
