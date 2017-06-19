@@ -59,10 +59,16 @@ MyApplet.prototype = {
                     if(action !== "") {
                         let actionAndCommandArray = action.split('|');
                         let actionName = actionAndCommandArray[1];
-                        let command = actionAndCommandArray[2];
-                        let item = new PopupMenu.PopupMenuItem(actionName);
-                        item.connect('activate', Lang.bind(this, function() { this.doAction(actionName, command); }));
-                        this.menu.addMenuItem(item);
+                        if (actionName == "separator") {
+                            this.menu.addMenuItem(new PopupMenu.PopupSeparatorMenuItem());
+                        } else {
+                            let command = actionAndCommandArray[2];
+                            let item = new PopupMenu.PopupMenuItem(actionName);
+                            item.connect('activate', Lang.bind(this, function () {
+                                this.doAction(actionName, command);
+                            }));
+                            this.menu.addMenuItem(item);
+                        }
                     }
                 }
             }

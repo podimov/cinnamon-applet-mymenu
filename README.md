@@ -22,7 +22,12 @@ An applet for various actions
     ```
     Action|Launch Midnight Commander|mc
     ```
-    where "Launch Midnight Commander" - command name, "mc" - command
+    where "Launch Midnight Commander" - command name, "mc" - command.
+    
+    Also you can use separator:
+    ```
+    Action|separator
+    ```
     
 # License
 
